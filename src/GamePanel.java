@@ -45,7 +45,7 @@ public class GamePanel {
         }
         public void keyReleased(KeyEvent e)
         {
-            
+
         }
     }
 
