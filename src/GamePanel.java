@@ -1,4 +1,6 @@
 import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class GamePanel {
     public GamePanel()
@@ -32,8 +34,21 @@ public class GamePanel {
     }
     public void run()
     {
-        
+
     }
+
+    public class AL extends KeyAdapter
+    {
+        public void keyPressed(KeyEvent e)
+        {
+
+        }
+        public void keyReleased(KeyEvent e)
+        {
+            
+        }
+    }
+
 
 
 
