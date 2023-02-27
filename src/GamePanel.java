@@ -8,7 +8,7 @@ public class GamePanel extends JPanel implements Runnable
 {
 //Dimensions of the table, based od actual real life ping pong table dimensions
     static final int GAME_WIDTH = 1000;
-    static final int GAME_HEIGHT = (int)(GAME_WIDTH * (5/9));
+    static final int GAME_HEIGHT = (int)(GAME_WIDTH * (0.5555));
     public final Dimension SCREEN_SIZE = new Dimension(GAME_WIDTH, GAME_HEIGHT);
     static final int BALL_DIAMETER = 20;
     static final int PADDLE_WIDTH = 25;
@@ -46,7 +46,10 @@ public class GamePanel extends JPanel implements Runnable
     }
     public void paint(Graphics g)
     {
-
+        image = createImage(getWidth(),getHeight());
+        graphics = image.getGraphics();
+        draw(graphics);
+        g.drawImage(image,0,0,this);
     }
     public void draw(Graphics g)
     {
