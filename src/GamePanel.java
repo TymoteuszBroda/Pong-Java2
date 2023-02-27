@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.util.Random;
 
 public class GamePanel extends JPanel implements Runnable
 {
@@ -12,6 +13,16 @@ public class GamePanel extends JPanel implements Runnable
     static final int BALL_DIAMETER = 20;
     static final int PADDLE_WIDTH = 25;
     static final int PADDLE_HEIGHT  = 100;
+
+    //Declared all necessary objects
+    Thread gameThread;
+    Image image;
+    Graphics graphics;
+    Random random;
+    Paddle paddle1;
+    Paddle paddle2;
+    Ball ball;
+    Score score;
     public GamePanel()
     {
 
