@@ -59,6 +59,7 @@ public class GamePanel extends JPanel implements Runnable
         paddle1.draw(g);
         paddle2.draw(g);
         ball.draw(g);
+        score.draw(g);
 
     }
     public void move()
@@ -131,6 +132,19 @@ public class GamePanel extends JPanel implements Runnable
         if (paddle2.y>=(GAME_HEIGHT-PADDLE_HEIGHT))
         {
             paddle2.y=GAME_HEIGHT-PADDLE_HEIGHT;
+        }
+        //give a player point, restart positions of ball and paddles
+        if (ball.x<=0)
+        {
+            score.player2++;
+            newPaddles();
+            newBall();
+        }
+        if (ball.x>=GAME_WIDTH-BALL_DIAMETER)
+        {
+            score.player1++;
+            newPaddles();
+            newBall();
         }
 
     }
