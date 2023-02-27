@@ -1,2 +1,7 @@
-public class GameFrame {
+public class GameFrame
+{
+    public GameFrame()
+    {
+
+    }
 }
