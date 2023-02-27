@@ -26,18 +26,20 @@ public class Ball extends Rectangle
     }
     public void setXDirection(int randomXDirection)
     {
-
+        xVelocity = randomXDirection;
     }
     public void setYDirection(int randomYDirection)
     {
-
+        yVelocity = randomYDirection;
     }
     public void move()
     {
-
+        x+=xVelocity;
+        y+=yVelocity;
     }
     public void draw(Graphics g)
     {
-
+        g.setColor(Color.WHITE);
+        g.fillOval(x,y,height,width);
     }
 }
