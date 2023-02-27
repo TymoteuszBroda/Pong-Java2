@@ -69,6 +69,18 @@ public class GamePanel extends JPanel implements Runnable
     }
     public void checkCollision()
     {
+        //Bounce the ball off and top windows edges
+        if (ball.y<=0)
+        {
+            ball.setYDirection(-ball.yVelocity);
+        }
+        if (ball.y>=GAME_HEIGHT-BALL_DIAMETER)
+        {
+            ball.setYDirection(-GAME_HEIGHT-BALL_DIAMETER);
+        }
+
+
+
         //stops paddles at window edges
         if (paddle1.y<=0)
         {
