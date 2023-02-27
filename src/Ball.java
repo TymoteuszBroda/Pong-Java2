@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Ball {
+public class Ball extends Rectangle{
     public Ball()
     {
 
@@ -19,6 +19,6 @@ public class Ball {
     }
     public void draw(Graphics g)
     {
-        
+
     }
 }

@@ -1,8 +1,9 @@
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-public class GamePanel {
+public class GamePanel extends JPanel implements Runnable {
     public GamePanel()
     {
 
