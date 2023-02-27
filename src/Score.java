@@ -7,7 +7,7 @@ public class Score extends Rectangle
     static int GAME_HEIGHT;
     int player1;
     int player2;
-    
+
     public Score()
     {
 
